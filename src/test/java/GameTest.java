@@ -33,7 +33,7 @@ public class GameTest {
 
     @Test
     public void movesShouldCountNegativeGreen() {
-        int[] speed = {-1, 0, 5};
+        int[] speed = {-1, 0, 10};
         Game.trafficGreenLight = true;
         int expected = 0;
         int actual = Game.moves(speed);
@@ -42,7 +42,7 @@ public class GameTest {
 
     @Test
     public void movesShouldCountNegativeRed() {
-        int[] speed = {-1, 0, 5};
+        int[] speed = {-1, 0, 10};
         Game.trafficGreenLight = false;
         int expected = 2;
         int actual = Game.moves(speed);
